@@ -1,0 +1,584 @@
+:root {
+    --abu: #6c757d;
+    --terang: #f8f9fa;
+    --gelap: #343a40;
+}
+body {
+    
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 0px;
+}
+.banner {
+    background: url("TA/bgjabar.jpg") no-repeat center/cover;
+    height: 800px;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.3); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    z-index: 1;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+}
+
+.utama{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.selamat{
+    font-size: 20px;
+    color: #f5f5f5;
+    font-weight: 500; 
+    margin-top: 0;
+}
+
+header {
+    backdrop-filter: blur(6px); 
+    background:rgba(157, 153, 153, 0.6);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.42;
+}
+.brand div p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    color: var(--terang);
+}
+
+header .logo {
+    width: 60px;
+    height: auto;
+    margin: 0;
+    margin-right: 20px;
+    margin-left: 100px;
+    -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1)); 
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
+}
+
+header h1 {
+    font-size: 22px;
+    text-align: left;
+    color: white;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0);
+   margin-left: auto;
+   margin-right: 50px;
+   gap: 50px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+    border-radius: 15px; 
+    
+}
+
+nav ul li a {
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+nav ul li a:hover {
+    border-radius: 20px; 
+    color: #0a1a3e;
+    
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    backdrop-filter: blur(6px); 
+    background: rgba(157, 153, 153, 0.6);
+    left: 0;
+    top: 35px;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+}
+
+nav ul li ul li a:hover {
+    border-radius: 10px;
+    background-color: rgb(188, 190, 193, 0.9);
+    color: white;
+}
+nav ul li ul li  {
+    margin: 0;
+    width: 150px;
+}
+nav ul li ul li a {
+    padding: 10px;
+    font-weight: normal;
+    color: #e3e3e3;
+}
+nav ul li:hover ul {
+    display: block;
+    color: #0a1a3e;
+}
+nav ul li a.aktip {
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav ul li a.aktip:hover{
+    color: #0a1a3e;
+}
+
+.kontak{
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 8px 12px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a1a3e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;                
+    padding: 40px 80px;
+    flex-wrap: wrap;
+    margin-left: 150px;
+  }
+
+  .footer-column {
+    flex: 1; 
+    min-width: 220px; 
+  }
+  
+  .footer-brand {
+    flex: 1 1 200px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    min-width: 210px;
+  }
+  
+  .footer-links {
+    flex: 3 1 600px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 9px;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column a:hover {
+    color: #ffd54f;
+  }
+  
+  .social-media li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding: 14px 0 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    background: transparent;
+    margin: 0;
+  }
+  
+
+/* Tiga Wilayah */
+
+.layanan {
+    text-align: center;
+    padding: 50px 60px;
+    background-color: var(--terang);
+    color: var(--gelap);
+    margin-bottom: 30px;
+  }
+  
+  .layanan h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .layanan-deskripsi {
+    color: var(--abu);
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  
+  .layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+  
+  .layanan-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 340px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .layanan-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .layanan-card h3 {
+    font-size: 20px;
+    color: var(--gelap);
+    margin: 0 0 8px;
+  }
+  
+  .layanan-card p {
+    color: var(--abu);
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .layanan-link {
+    text-decoration: none;
+    color: #0a1a3e;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .layanan-link:hover {
+    color: #007bff;
+  }
+  
+  /* Galeri dan Penghargaan */
+  .gallery-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .gallery-section h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .gallery-section p {
+    color: var(--abu);
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  .gallery-item {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.03);
+  }
+  
+  .gallery-button {
+    display: inline-block;
+    text-decoration: none;
+    color: #0a1a3e;
+    border: 1.5px solid #0a1a3e;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .gallery-button:hover {
+    background-color: #0a1a3e;
+    color: #fff;
+  }
+
+  /* Bali */
+  .bannerbali{
+    background: url("TA/bali.jpg") no-repeat center/cover;
+    height: 500px;
+    }
+
+    .banner-textbali{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        z-index: 2;
+        font-family:'Trebuchet MS';
+    }
+    
+    .utamabali{
+        color: rgb(255, 255, 255);
+        font-size: 200px;
+        text-align: center;
+        font-weight: bold;
+        z-index: 2;
+        position: relative;
+        margin-top: 250px;
+    }
+
+    .destination-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 60px 80px;
+      gap: 40px;
+    }
+    
+    .destination-images {
+      flex: 1 1 45%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .img-row {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .img-row img {
+      width: 45%;
+      margin-top: 50px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Teks deskripsi */
+    .destination-text {
+      flex: 1 1 45%;
+    }
+    
+    .destination-text h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    
+    .destination-text p {
+      line-height: 1.8;
+      color: #475569;
+      margin-bottom: 20px;
+    }
+    
+    .bali-places {
+      text-align: center;
+      padding: 80px 60px;
+      background-color: #f9fafb;
+    }
+    
+    .bali-places h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #1e293b;
+    }
+    
+    /* Container */
+    .place-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    
+    /* Card */
+    .place-card {
+      background: #fff;
+      border-radius: 15px;
+      width: 260px;
+      overflow: hidden;
+    }
+    
+    .place-card img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+    }
+    
+    .place-card h3 {
+      font-size: 20px;
+      margin: 18px 0 8px;
+      color: #0f172a;
+    }
+    
+    .place-card p {
+      font-size: 15px;
+      color: #475569;
+      padding: 0 18px 20px;
+      line-height: 1.6;
+    }
+
+    .kuliner-section {
+      text-align: center;
+      padding: 80px 60px;
+      background-color: #fff8f2;
+    }
+    
+    .kuliner-section h2 {
+      font-size: 34px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 10px;
+    }
+    
+    .kuliner-desc {
+      font-size: 16px;
+      color: #475569;
+      max-width: 750px;
+      margin: 0 auto 50px;
+      line-height: 1.7;
+    }
+    
+    .kuliner-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    
+    .kuliner-card {
+      background: #ffffff;
+      border-radius: 18px;
+      width: 260px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .kuliner-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+    
+    .kuliner-card h3 {
+      font-size: 20px;
+      margin: 18px 0 8px;
+      color: #0f172a;
+    }
+    
+    .kuliner-card p {
+      font-size: 15px;
+      color: #475569;
+      padding: 0 18px 22px;
+      line-height: 1.6;
+    }
+    
+    .kuliner-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+  
