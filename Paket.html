@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama Nusantara - Paket </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="TA/logoiya.png">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="brand">
+       <a href="TA.html"><img class="logo" src="TA/logopano.png" alt="logo sman3"></a>
+        <div>
+            <h1>Panorama Nusantara</h1>
+            <p>Jelajahi Keindahan Alam dan Budaya yang Tak Terlupakan</p>
+        </div>
+    </div>
+  
+    <!--Nav bar-->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="aktip" >Home</a>
+            </li>
+            <li>
+                <a href="#">Wilayah  <i class="fas fa-chevron-down"></i> </a>
+                <ul>
+                    <li><a href="Bali.html">Bali</a></li>
+                    <li><a href="Yogyakarta.html">Yogyakarta</a></li>
+                    <li><a href="Jakarta.html">Jakarta</a></li>
+                    <li><a href="JawaTimur.html">Bandung</a></li>
+                    <li><a href="JawaTimur.html">Jawa Timur</a></li>
+                    <li><a href="NTT.html">NTT</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#">Akomodasi <i class="fas fa-chevron-down"></i> </a>
+              <ul>
+                  <li><a href="Paket.html">Paket</a></li>
+                  <li><a href="Booking.html">Booking</a></li>
+                  <li><a href="InfoSelengkapnya.html">Informasi Selengkapnya</a></li>
+              </ul>
+          </li>
+            <li><a href="TA.html" class="aktip" >FAQ</a>
+            </li>
+            <li><a href="kontak.html" class="kontak">Kontak Kami</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section class="popular-tour">
+        <div class="tour-header">
+          <h4>Best Place For You</h4>
+          <h2>Most Popular Tour</h2>
+          <p>Jelajahi pilihan tur paling populer yang menawarkan pengalaman wisata terbaik di berbagai penjuru Nusantara.</p>
+        </div>
+      
+        <div class="tour-grid">
+          <div class="tour-card">
+            <img src="TA/jakarta.jpg" alt="Greece">
+            <div class="tour-info">
+              <h3>Jakarta Heritage<br> & City Lights</h3>
+              <div class="tour-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4.0</span>
+              </div>
+              <span class="price">IDR 3.200.000 / Person</span>
+              <div class="tour-bottom">
+                <span class="duration"> <i class="fa-regular fa-clock"> </i>3 Days</span>
+            <button class="book-btn" onclick="goToBooking(1)">Book Now <i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tour-card">
+            <img src="TA/bali.jpg" alt="Italy">
+            <div class="tour-info">
+              <h3>Bali Serenity <br>Escape</h3>
+              <div class="tour-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </div>
+              <span class="price">IDR 4.500.000 / Person</span>
+              <div class="tour-bottom">
+                <span class="duration"><i class="fa-regular fa-clock"></i>5 Days</span>
+            <button class="book-btn" onclick="goToBooking(2)">Book Now<i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tour-card">
+            <img src="TA/bandung.jpg" alt="Dubai">
+            <div class="tour-info">
+              <h3>Bandung Highlands Adventure</h3>
+              <div class="tour-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.5</span>
+              </div>
+              <span class="price">IDR 3.800.000 / Person</span>
+              <div class="tour-bottom">
+                <span class="duration"><i class="fa-regular fa-clock"></i>6 Days</span>
+            <button class="book-btn" onclick="goToBooking(3)">Book Now<i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="tour-card">
+            <img src="TA/ntt1.jpg" alt="Switzerland">
+            <div class="tour-info">
+              <h3>East Java & Nusa Tenggara Explorer</h3>
+              <div class="tour-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.5</span>
+              </div>
+              <span class="price">IDR 6.900.000 / Person</span>
+              <div class="tour-bottom">
+                <span class="duration"><i class="fa-regular fa-clock"></i>6 Days</span>
+            <button class="book-btn" onclick="goToBooking(4)">Book Now<i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+
+    <!-- HTML footer -->
+    <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Wilayah</h4>
+              <ul>
+                <li><a href="Bali.html"> Bali </a></li>
+                <li><a href="Yogyakarta.html"> Yogyakarta</a></li>
+                <li><a href="Jakarta.html">Jakarta</a></li>
+                <li><a href="Bandung.html">Bandung</a></li>
+                <li><a href="JawaTimur.html">Jawa Timur</a></li>
+                <li><a href="NTT.html">NTT</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Informasi</h4>
+              <ul>
+                <li><a href="AboutUs.html">Tentang Kami</a></li>
+                <li><a href="KebijakanPrivasi.html">Kebijakan Privasi</a></li>
+                <li><a href="S&K.html">Syarat & Ketentuan</a></li>
+                <li><a href="Cookie.html">Kebijakan Cookie</a></li>
+                <li><a href="Kontak.html">Hubungi kami</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Media Sosial</h4>
+              <ul class="social-media">
+                <li><a href="https://web.facebook.com/pesona.indonesia?_rdc=1&_rdr" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://x.com/pesonaindonesia" aria-label="Twitter"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/pesona.indonesia" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/c/PesonaIndonesiaofficial" aria-label="Youtube"><i class="fab fa-youtube"></i> Youtube</a></li>
+                <li><a href="https://www.tiktok.com/@pesonaindonesia" aria-label="Tiktok"><i class="fab fa-tiktok"></i> Tiktok</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright ©2025 West Java Tourism, Republic of Indonesia</p>
+        </div>
+      </footer>
+    </body>
+    <script>
+        function goToBooking(value) {
+            window.location.href = `Booking.html?value=${value}#paket-pemesanan`
+        }
+    </script>
+    </html>
